@@ -17,6 +17,7 @@ Class User1Controller extends Controller {
     * @var User1Service
     */
     public $user1Service;
+    public $user2Service;
     /**
     * Create a new controller instance
     * @return void

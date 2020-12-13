@@ -12,10 +12,12 @@ class User2Service{
     */
 
     public $baseUri;
+    public $secret;
 
     public function __construct(){
         $this->baseUri = config('services.users2.base_uri');
-    } //construct
+        $this->secret = config('services.users2.secret');
+    }// construct
 
     public function obtainUsers2(){
         return $this->performRequest('GET','/users');

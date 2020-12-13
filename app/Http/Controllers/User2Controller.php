@@ -16,6 +16,7 @@ Class User2Controller extends Controller {
     * The service to consume the User1 Microservice
     * @var User2Service
     */
+    public $user1Service;
     public $user2Service;
     /**
     * Create a new controller instance
